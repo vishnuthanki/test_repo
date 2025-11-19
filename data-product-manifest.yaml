@@ -3,7 +3,7 @@ jobName: read_pq_test_dp
 jobType: Source Aligned Data Product
 developerId: f271c4f9-12bc-461b-81de-7b41c0f4353c
 domain: engineering
-alias: write_to_iceberg
+alias: write_to_iceberg1
 discoveryPort:
   name: read_pq_test_dp
 inputPorts:
@@ -21,7 +21,7 @@ inputPorts:
     type: inputParquet
 productState:
   isDynamic: true
-  alias: write_to_iceberg
+  alias: write_to_iceberg1
   retentionVersions: ""
   logicalSchema:
     properties:
@@ -46,7 +46,7 @@ productState:
 transformation:
   - isDynamic: true
     alias: Spark_SQL_1
-    description: read_pq
+    description: read_pq1
     sequence: 2
     inputDataFrameList:
       - inputDataFrame: read_csv_1
